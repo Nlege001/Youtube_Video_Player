@@ -13,6 +13,7 @@ android {
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -42,6 +43,10 @@ dependencies {
     //////////////////////////////////////////////////////////
     implementation files('libs\\YouTubeAndroidPlayerApi.jar')
     implementation fileTree(dir: 'libs' , include: ['*.jar'])
+    //////////////////////////////////////////////////////////
+
+
+
     //////////////////////////////////////////////////////////
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'

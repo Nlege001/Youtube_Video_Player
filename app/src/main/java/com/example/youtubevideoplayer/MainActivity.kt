@@ -1,53 +1,49 @@
 package com.example.youtubevideoplayer
 
 
+import android.net.Uri
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
+import android.widget.MediaController
 import android.widget.Toast
+import android.widget.VideoView
+import androidx.appcompat.app.AppCompatActivity
 import com.google.android.youtube.player.*
 
-//https://www.youtube.com/watch?v=L0WGZSiOZsM
-class MainActivity : YouTubeBaseActivity() {
-    val VIDEO_ID = "TbJvVg7_shY"
-    val YOUTUBE_API_KEY = "AIzaSyC3_hVuOhAxz2WFLQ3UMHidn-6El40lGzo"
 
-    lateinit var youtubePlayer: YouTubePlayerView
-    lateinit var btnPlay: Button
+class MainActivity : AppCompatActivity() {
 
-    lateinit var youtubePlayerInit: YouTubePlayer.OnInitializedListener
+    var videoView: VideoView ?= null
 
+    var mediaController: MediaController?=  null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
 
-        youtubePlayer = findViewById(R.id.youtubePlayer)
-        btnPlay = findViewById(R.id.btnPlay)
-
-        youtubePlayerInit = object : YouTubePlayer.OnInitializedListener{
-            override fun onInitializationSuccess(
-                p0: YouTubePlayer.Provider?,
-                p1: YouTubePlayer?,
-                p2: Boolean
-            ) {
-                p1?.loadVideo(VIDEO_ID)
+        videoView = findViewById<View>(R.id.videoView) as VideoView?
 
 
-            }
-
-            override fun onInitializationFailure(
-                p0: YouTubePlayer.Provider?,
-                p1: YouTubeInitializationResult?
-            ) {
-                Toast.makeText(applicationContext, "Failed", Toast.LENGTH_SHORT ).show()
-
-            }
+        if(mediaController == null){
+            mediaController = MediaController(this)
+            mediaController!!.setAnchorView(this.videoView)
 
         }
+        videoView!!.setMediaController(mediaController)
 
-        btnPlay.setOnClickListener {
-            youtubePlayer.initialize(YOUTUBE_API_KEY, youtubePlayerInit)
+        videoView!!.setVideoURI(Uri.parse("android.resource://" + packageName + "/" + R.raw.video))
+
+        videoView!!.requestFocus()
+
+        videoView!!.start()
+
+        videoView!!.setOnCompletionListener {
+            Toast.makeText(applicationContext, " Video End", Toast.LENGTH_LONG).show()
         }
+
+
+
 
 
     }
