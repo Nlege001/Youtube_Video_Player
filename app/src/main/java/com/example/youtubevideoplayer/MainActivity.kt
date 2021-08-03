@@ -6,7 +6,7 @@ import android.widget.Button
 import android.widget.Toast
 import com.google.android.youtube.player.*
 
-//https://www.youtube.com/watch?v=L0WGZSiOZsM
+
 class MainActivity : YouTubeBaseActivity() {
     val VIDEO_ID = "TbJvVg7_shY"
     val YOUTUBE_API_KEY = "AIzaSyC3_hVuOhAxz2WFLQ3UMHidn-6El40lGzo"
