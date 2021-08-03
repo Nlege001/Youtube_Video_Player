@@ -1,41 +1,54 @@
 package com.example.youtubevideoplayer
 
-import androidx.appcompat.app.AppCompatActivity
+
 import android.os.Bundle
-import com.google.android.youtube.player.YouTubeInitializationResult
-import com.google.android.youtube.player.YouTubePlayer
-import com.google.android.youtube.player.YouTubePlayerSupportFragment
+import android.widget.Button
+import android.widget.Toast
+import com.google.android.youtube.player.*
 
 //https://www.youtube.com/watch?v=Y0Dj-VCXE_o
-class MainActivity : AppCompatActivity() {
+class MainActivity : YouTubeBaseActivity() {
+    val VIDEO_ID = "TbJvVg7_shY"
+    val YOUTUBE_API_KEY = "AIzaSyC3_hVuOhAxz2WFLQ3UMHidn-6El40lGzo"
+
+    lateinit var youtubePlayer: YouTubePlayerView
+    lateinit var btnPlay: Button
+
+    lateinit var youtubePlayerInit: YouTubePlayer.OnInitializedListener
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
 
-        var youtubefragment = supportFragmentManager.findFragmentById(R.id.youtube_fragment) as YouTubePlayerSupportFragment
+        youtubePlayer = findViewById(R.id.youtubePlayer)
+        btnPlay = findViewById(R.id.btnPlay)
 
-        youtubefragment.initialize("AIzaSyBinbHb4XnxtxkCRXTSL4DO0ccIsnr-FOc", object: YouTubePlayer.OnInitializedListener{
+        youtubePlayerInit = object : YouTubePlayer.OnInitializedListener{
             override fun onInitializationSuccess(
-                provider: YouTubePlayer.Provider?,
-                player: YouTubePlayer?,
-                wasRestored: Boolean
+                p0: YouTubePlayer.Provider?,
+                p1: YouTubePlayer?,
+                p2: Boolean
             ) {
-                if (player == null) return
-                if(wasRestored)
-                    player.play()
-                else{
-                    player.cueVideo("wWz--lUTl5k")
-                    player.setPlayerStyle(YouTubePlayer.PlayerStyle.DEFAULT)
-                }
+                p1?.loadVideo(VIDEO_ID)
+
+
             }
-Ω
+
             override fun onInitializationFailure(
                 p0: YouTubePlayer.Provider?,
                 p1: YouTubeInitializationResult?
             ) {
+                Toast.makeText(applicationContext, "Failed", Toast.LENGTH_SHORT ).show()
+
             }
 
-        })
+        }
+
+        btnPlay.setOnClickListener {
+            youtubePlayer.initialize(YOUTUBE_API_KEY, youtubePlayerInit)
+        }
+
+
     }
 }

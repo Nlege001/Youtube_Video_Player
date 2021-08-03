@@ -6,14 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <fragment
-        android:id="@+id/youtube_fragment"
-        android:name="com.google.android.youtube.player.YouTubePlayerSupportFragment"
-        android:layout_width="0dp"
+   <com.google.android.youtube.player.YouTubePlayerView
+       android:id="@+id/youtubePlayer"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <Button
+        android:id="@+id/btnPlay"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-    </fragment>
+        app:layout_constraintTop_toBottomOf="@id/youtubePlayer"
+        android:text="@string/play"
+        android:textAllCaps="false"/>
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
