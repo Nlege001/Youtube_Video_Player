@@ -9,4 +9,7 @@
 |API key creation|https://console.cloud.google.com/apis/credentials?project=youtube-video-player-321812&folder=&organizationId=|
 
 
-#### 2. After Doing this clone the repository and check out the **"Second Branch"**
+#### 2. After Doing this clone the repository and check out the **"Second Branch"** (This can be done inside Android Studio by using the git option at the bottom right of the screen)
+
+#### 3.
+
