@@ -11,7 +11,7 @@
 
 #### 2. After Doing this clone the repository and check out the **"Second Branch"** (This can be done inside Android Studio by using the git option at the bottom right of the screen)
 
-#### 3. Locate the _YouTubeAndroidPlayerApi.jar*_ file and copy it
-#### 4. Paste the youtube api jat file in the _libs_ section of the android studio project folder.(The only step that remains is getting the api key and using it in the code)
+#### 3. Locate the _"YouTubeAndroidPlayerApi.jar*"_ file and copy it
+#### 4. Paste the youtube api jat file in the _"libs"_ section of the android studio project folder.(The only step that remains is getting the api key and using it in the code)
 
 
