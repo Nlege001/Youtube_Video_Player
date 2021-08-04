@@ -5,5 +5,5 @@
 #### Download or setup the following Items
 |Activity|Link|
 |--------|--------|
-|YouTube API download|link|
-|API key creation|link|
+|YouTube API download|https://developers.google.com/youtube/android/player/downloads|
+|API key creation|https://console.cloud.google.com/apis/credentials?project=youtube-video-player-321812&folder=&organizationId=|
