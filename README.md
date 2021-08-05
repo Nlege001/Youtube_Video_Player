@@ -24,6 +24,5 @@ class MainActivity : YouTubeBaseActivity() {
     lateinit var btnPlay: Button
 ```
 #### 6. Select a particluar youtube video which you want to play. We will be using the ```VIDEO_ID_``` instead of a Youtube link.
-#### A ```VIDEO_ID```  is a part of a youtube link that comes after the equal sign(=). That is the part of the link that always comes after 
-```https://www.youtube.com/watch?v=```. We only need this ```VIDEO_ID``` fragment of the link and we will fetch the youtube video and play it on our emulator using our app.
+#### A ```VIDEO_ID```  is a part of a youtube link that comes after the equal sign(=). That is the part of the link that always comes after ```https://www.youtube.com/watch?v=```. We only need this ```VIDEO_ID``` fragment of the link and we will fetch the youtube video and play it on our emulator using our app.
 
