@@ -44,4 +44,12 @@ class MainActivity : YouTubeBaseActivity() {
 ### This is another application that can be used to parse a video in mp4 and other video formats. 
 ## Steps to run the video of your choice
 
-1. If you copy and paste your video in the ```res``` file of the android studio project 
+1. Copy and paste your video in the ```res``` file of the android studio project 
+2. change or update the location of the video file in the line of code below. 
+```
+videoView!!.setMediaController(mediaController)
+
+        videoView!!.setVideoURI(Uri.parse("android.resource://" + packageName + "/" + R.raw.video))
+
+        videoView!!.requestFocus()
+```
