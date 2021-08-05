@@ -49,7 +49,7 @@ class MainActivity : YouTubeBaseActivity() {
 ```kotlin
 videoView!!.setMediaController(mediaController)
 
-        videoView!!.setVideoURI(Uri.parse("android.resource://" + packageName + "/" + R.raw.video))
+        videoView!!.setVideoURI(Uri.parse("android.resource://" + packageName + "/" + R.raw.video)) //----check or update file location
 
         videoView!!.requestFocus()
 ```
