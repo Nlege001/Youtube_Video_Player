@@ -23,4 +23,4 @@ class MainActivity : YouTubeBaseActivity() {
     lateinit var youtubePlayer: YouTubePlayerView
     lateinit var btnPlay: Button
 ```
-
+#### 6. Select a particluar youtube video which you want to play. We will be using the ```VIDEO_ID_``` instead of a Youtube link.
