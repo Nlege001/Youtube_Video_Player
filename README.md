@@ -40,3 +40,5 @@ class MainActivity : YouTubeBaseActivity() {
 
 
 # Video Pareser (branch name: ```third branch```)
+
+### This is another application that can be use tu parse a video in mp4 and other video formats. If you copy and paste your video in the 
