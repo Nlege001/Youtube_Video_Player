@@ -27,6 +27,6 @@ class MainActivity : YouTubeBaseActivity() {
 #### A ```VIDEO_ID```  is a part of a youtube link that comes after the equal sign(=). That is the part of the link that always comes after ```https://www.youtube.com/watch?v=```. We only need this ```VIDEO_ID``` fragment of the link and we will fetch the youtube video and play it on our emulator using our app.
 
 
-## How do we play, pause and scroll view of this YouTube video?
+# How do we play, pause and scroll view of this YouTube video?
 
 ##### We will use the built in widget call ```MediaPlayer``` that will provide us with this functionality of plau,pausing and scrolling view of our video
