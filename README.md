@@ -1,4 +1,4 @@
-# Youtube Video Player (branch name : ***Second branch***)
+# Youtube Video Player (branch name : ```Second branch```)
 #### This is an application thet playes videos from Youtube. We need to use the YouTube API that Google provide to make this happen and we also have to create an API key using our gmail account. 
 
 ## Steps to set up YouTube API
@@ -30,3 +30,7 @@ class MainActivity : YouTubeBaseActivity() {
 # How do we play, pause and scroll view of this YouTube video?
 
 ##### We will use the built in widget call ```MediaPlayer``` that will provide us with this functionality of play,pausing and scrolling view of our video
+
+
+
+# Video Pareser ()
