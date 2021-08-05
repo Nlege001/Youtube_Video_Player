@@ -29,4 +29,4 @@ class MainActivity : YouTubeBaseActivity() {
 
 # How do we play, pause and scroll view of this YouTube video?
 
-##### We will use the built in widget call ```MediaPlayer``` that will provide us with this functionality of plau,pausing and scrolling view of our video
+##### We will use the built in widget call ```MediaPlayer``` that will provide us with this functionality of play,pausing and scrolling view of our video
