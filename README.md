@@ -44,8 +44,9 @@ class MainActivity : YouTubeBaseActivity() {
 ### This is another application that can be used to parse a video in mp4 and other video formats. 
 ## Steps to run the video of your choice
 
-1. Copy and paste your video in the ```res``` file of the android studio project 
-2. change or update the location of the video file in the line of code below. 
+1. Checkout to branch ```third branch ```
+2.  Copy and paste your video in the ```res``` file of the android studio project 
+3. change or update the location of the video file in the line of code below. 
 ```kotlin
 videoView!!.setMediaController(mediaController)
 
@@ -53,3 +54,4 @@ videoView!!.setMediaController(mediaController)
 
         videoView!!.requestFocus()
 ```
+3. Run the app 
