@@ -46,7 +46,7 @@ class MainActivity : YouTubeBaseActivity() {
 
 1. Copy and paste your video in the ```res``` file of the android studio project 
 2. change or update the location of the video file in the line of code below. 
-```
+```kotlin
 videoView!!.setMediaController(mediaController)
 
         videoView!!.setVideoURI(Uri.parse("android.resource://" + packageName + "/" + R.raw.video))
