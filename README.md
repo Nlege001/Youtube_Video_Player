@@ -19,7 +19,7 @@
 ```kotlin
 class MainActivity : YouTubeBaseActivity() {
     val VIDEO_ID = "TbJvVg7_shY"
-    val YOUTUBE_API_KEY = "AIzaSyC3_hVuOhAxz2WFLQ3UMHidn-6El40lGzo" //-------Replcae this value with a new API key
+    val YOUTUBE_API_KEY = "AIzaSyC3_hVuOhAxz2WFLQ3UMHidn-6El40lGzo" //-------Replace this value with a new API key
     lateinit var youtubePlayer: YouTubePlayerView
     lateinit var btnPlay: Button
 ```
