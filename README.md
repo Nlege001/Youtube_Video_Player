@@ -54,4 +54,4 @@ videoView!!.setMediaController(mediaController)
 
         videoView!!.requestFocus()
 ```
-3. Run the app 
+4. Run the app 
