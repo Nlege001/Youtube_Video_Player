@@ -82,6 +82,7 @@ videoView!!.setMediaController(mediaController)
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
+    
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/TextInputEdit"
@@ -108,4 +109,7 @@ videoView!!.setMediaController(mediaController)
         app:layout_constraintTop_toBottomOf="@+id/TextInputLayout"
         app:layout_constraintVertical_bias="0.137" />
 ```
+
+### Snippet of what the application looks like
+
 
