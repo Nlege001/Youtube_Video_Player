@@ -7,7 +7,7 @@
 
 
 
-# Youtube Video Player (branch name : ```Second branch```). ```FoxFire TV Team```<a name = 'x'>/<a>
+# Youtube Video Player (branch name : ```Second branch```). ```FoxFire TV Team``` <a name = 'x'>/<a>
 #### This is an application thet playes videos from Youtube. We need to use the YouTube API that Google provide to make this happen and we also have to create an API key using our gmail account. 
 
 ## Steps to set up YouTube API 
@@ -48,7 +48,7 @@ class MainActivity : YouTubeBaseActivity() {
 
 
 
-# Video Pareser (branch name: ```third branch```)<a name= "y">/<a>
+# Video Pareser (branch name: ```third branch```) <a name= "y">/<a>
 
 ### This is another application that can be used to parse a video in mp4 and other video formats. 
 ## Steps to run the video of your choice
@@ -67,7 +67,7 @@ videoView!!.setMediaController(mediaController)
 
 
 
-# URL-ID search bar included app (```URL-ID``` branch)<a name= "z">/<a>
+# URL-ID search bar included app (```URL-ID``` branch) <a name= "z">/<a>
 
 #### The previous application (the one on ```second branch```) had a URL-ID that was hard coded. This application includes a text widget that will take any URL-ID (hence play any video) when the video URL-ID is placed.
 
