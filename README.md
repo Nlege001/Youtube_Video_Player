@@ -60,4 +60,4 @@ videoView!!.setMediaController(mediaController)
 
 # URL-ID search bar included app (```URL-ID``` branch)
 
-## The previous application (the one on ```second branch```) had a URL id that was hard coded. This application includes a text widget that will take any URL-ID (hence play any video) when the video URL-ID is placed.
+#### The previous application (the one on ```second branch```) had a URL id that was hard coded. This application includes a text widget that will take any URL-ID (hence play any video) when the video URL-ID is placed.
