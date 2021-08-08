@@ -49,6 +49,7 @@ class MainActivity : YouTubeBaseActivity() {
 
 
 <div name= "y"/>
+
 # Video Pareser (branch name: ```third branch```) 
 
 ### This is another application that can be used to parse a video in mp4 and other video formats. 
@@ -68,6 +69,7 @@ videoView!!.setMediaController(mediaController)
 
 
 <div name= "z"/>
+
 # URL-ID search bar included app (```URL-ID``` branch) 
 
 #### The previous application (the one on ```second branch```) had a URL-ID that was hard coded. This application includes a text widget that will take any URL-ID (hence play any video) when the video URL-ID is placed.
