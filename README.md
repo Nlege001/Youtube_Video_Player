@@ -89,3 +89,23 @@ videoView!!.setMediaController(mediaController)
             android:layout_height="match_parent" />
     </com.google.android.material.textfield.TextInputLayout>
 ```
+
+### Add the following code of snippet to add a button for the text widget so thath user can confirm the URL-ID
+```xml
+<Button
+        android:id="@+id/button1"
+        android:layout_width="123dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="127dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="161dp"
+        android:layout_marginBottom="114dp"
+        android:text="OK"
+        app:layout_constraintBottom_toTopOf="@+id/youtubePlayer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextInputLayout"
+        app:layout_constraintVertical_bias="0.137" />
+```
+
