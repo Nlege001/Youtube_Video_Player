@@ -9,11 +9,12 @@ import com.google.android.youtube.player.*
 
 //https://www.youtube.com/watch?v=L0WGZSiOZsM
 class MainActivity : YouTubeBaseActivity() {
-    lateinit var VIDEO_ID : TextInputEditText
+    lateinit var VIDEO_ID : String
     val YOUTUBE_API_KEY = "AIzaSyC3_hVuOhAxz2WFLQ3UMHidn-6El40lGzo"
 
     lateinit var youtubePlayer: YouTubePlayerView
     lateinit var btnPlay: Button
+    lateinit var okButtton: Button
 
     lateinit var youtubePlayerInit: YouTubePlayer.OnInitializedListener
 
@@ -24,6 +25,7 @@ class MainActivity : YouTubeBaseActivity() {
 
         youtubePlayer = findViewById(R.id.youtubePlayer)
         btnPlay = findViewById(R.id.btnPlay)
+        okButtton = findViewById(R.id.button1)
 
         youtubePlayerInit = object : YouTubePlayer.OnInitializedListener{
             override fun onInitializationSuccess(
@@ -31,7 +33,7 @@ class MainActivity : YouTubeBaseActivity() {
                 p1: YouTubePlayer?,
                 p2: Boolean
             ) {
-                p1?.loadVideo(VIDEO_ID.toString())
+                p1?.loadVideo(VIDEO_ID)
 
 
             }
@@ -45,9 +47,13 @@ class MainActivity : YouTubeBaseActivity() {
             }
 
         }
+        okButtton.setOnClickListener {
+            val VIDEO = findViewById<TextInputEditText>(R.id.TextInputEdit)
+            VIDEO_ID = VIDEO.text.toString()
+        }
+
 
         btnPlay.setOnClickListener {
-            VIDEO_ID = findViewById(R.id.TextInputEdit)
             youtubePlayer.initialize(YOUTUBE_API_KEY, youtubePlayerInit)
         }
 
