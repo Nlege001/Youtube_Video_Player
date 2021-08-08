@@ -1,7 +1,7 @@
 #### Table of Contents
-1. [Youtube video player](x)
-2. [Video Parser](y)
-3. [URL-ID search bar included youtube video player](z)
+ - [Youtube video player](x)
+ - [Video Parser](y)
+ - [URL-ID search bar included youtube video player](z)
 
 
 
