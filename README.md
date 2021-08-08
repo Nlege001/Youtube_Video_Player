@@ -112,3 +112,9 @@ videoView!!.setMediaController(mediaController)
 
 ### Snippet of what the application looks like
 <img src = https://github.com/Nlege001/Youtube_Video_Player/blob/master/youtubeapp.jpg width = 300>
+
+### How to use the app
+1. Copy the youtube video's URL-ID
+2. paste it in to the application
+3. press ```ok``` to confirm
+4. press ```Play``` to play
