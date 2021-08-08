@@ -19,7 +19,7 @@
 ```kotlin
 class MainActivity : YouTubeBaseActivity() {
     val VIDEO_ID = "TbJvVg7_shY"
-    val YOUTUBE_API_KEY = "AIzaSyC3_hVuOhAxz2WFLQ3UMHidn-6El40lGzo" //-------Replace this value with a new API key
+    val YOUTUBE_API_KEY = "API-KEY" //-------Replace "API-KEY" with a new API key
     lateinit var youtubePlayer: YouTubePlayerView
     lateinit var btnPlay: Button
 ```
@@ -55,3 +55,9 @@ videoView!!.setMediaController(mediaController)
         videoView!!.requestFocus()
 ```
 4. Run the app 
+
+
+
+# URL-ID search bar included app (```URL-ID``` branch)
+
+## The previous application (the one on ```second branch```) had a URL id that was hard coded. This application includes a text widget that will take any URL-ID (hence play any video) when the video URL-ID is placed.
