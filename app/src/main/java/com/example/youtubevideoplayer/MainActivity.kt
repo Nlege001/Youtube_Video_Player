@@ -8,7 +8,7 @@ import com.google.android.youtube.player.*
 
 //https://www.youtube.com/watch?v=L0WGZSiOZsM
 class MainActivity : YouTubeBaseActivity() {
-    val VIDEO_ID = "TbJvVg7_shY"
+    lateinit var VIDEO_ID : String
     val YOUTUBE_API_KEY = "AIzaSyC3_hVuOhAxz2WFLQ3UMHidn-6El40lGzo"
 
     lateinit var youtubePlayer: YouTubePlayerView
@@ -20,7 +20,7 @@ class MainActivity : YouTubeBaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
+        VIDEO_ID = findViewById(R.id.TextInputEdit)
         youtubePlayer = findViewById(R.id.youtubePlayer)
         btnPlay = findViewById(R.id.btnPlay)
 
