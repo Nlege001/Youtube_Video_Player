@@ -111,5 +111,4 @@ videoView!!.setMediaController(mediaController)
 ```
 
 ### Snippet of what the application looks like
-
-
+<img src = https://github.com/Nlege001/Youtube_Video_Player/blob/master/youtubeapp.jpg width = 100>
