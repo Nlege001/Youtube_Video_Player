@@ -9,7 +9,7 @@ import com.google.android.youtube.player.*
 
 class MainActivity : YouTubeBaseActivity() {
     val VIDEO_ID = "TbJvVg7_shY"
-    val YOUTUBE_API_KEY = "AIzaSyC3_hVuOhAxz2WFLQ3UMHidn-6El40lGzo"
+    val YOUTUBE_API_KEY = "******************" // Replace API key here
 
     lateinit var youtubePlayer: YouTubePlayerView
     lateinit var btnPlay: Button
