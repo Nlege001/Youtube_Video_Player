@@ -3,7 +3,11 @@
       - [Steps for setup](#a)
       - [Play, Pause and skip](#b)
  - [Video Parser](#y)
+      - [Steps](#c)
  - [URL-ID search bar included youtube video player](#z)
+      - [code](#d)
+      - [App Snippet](#e)
+      - [How to lanch the app](#f)
 
 
 
@@ -57,6 +61,9 @@ class MainActivity : YouTubeBaseActivity() {
 # ✅ Video Pareser (branch name: ```third branch```) 
 
 ### This is another application that can be used to parse a video in mp4 and other video formats. 
+
+<div name = 'c'/>
+
 ## Steps to run the video of your choice
 
 1. Checkout to branch ```third branch ```
@@ -78,6 +85,7 @@ videoView!!.setMediaController(mediaController)
 
 #### The previous application (the one on ```second branch```) had a URL-ID that was hard coded. This application includes a text widget that will take any URL-ID (hence play any video) when the video URL-ID is placed.
 
+<div name = 'd'/>
 
 ### Add the snippet of code below to add a text widget
 
@@ -125,9 +133,12 @@ videoView!!.setMediaController(mediaController)
         app:layout_constraintTop_toBottomOf="@+id/TextInputLayout"
         app:layout_constraintVertical_bias="0.137" />
 ```
+<div name = 'e'/>
 
 ### Snippet of what the application looks like
 <img src = https://github.com/Nlege001/Youtube_Video_Player/blob/master/youtubeapp.jpg width = 300>
+
+<div name = 'e'/>
 
 ### How to use the app
 1. Copy the youtube video's URL-ID
