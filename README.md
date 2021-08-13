@@ -1,3 +1,8 @@
+<img src = https://github.com/Nlege001/_kotlin/blob/master/FOX_Logo-removebg-preview.png width = 200>
+
+Software Engineering Internship - ```Fox FireTv Team```
+
+
 # Table of Contents
  - [Youtube video player](#x)
       - [Steps for setup](#a)
