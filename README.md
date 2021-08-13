@@ -1,5 +1,7 @@
 # Table of Contents
  - [Youtube video player](#x)
+      - [Steps for setup](#a)
+      - [Play, Pause and skip](#b)
  - [Video Parser](#y)
  - [URL-ID search bar included youtube video player](#z)
 
@@ -10,6 +12,8 @@
 
 # ✅ Youtube Video Player (branch name : ```Second branch```). ```FoxFire TV Team Assignment``` 
 #### This is an application thet playes videos from Youtube. We need to use the YouTube API that Google provide to make this happen and we also have to create an API key using our gmail account. 
+
+<div name = 'a'/>
 
 ## Steps to set up YouTube API 
 #### 1. Download or setup the following Items
@@ -36,7 +40,7 @@ class MainActivity : YouTubeBaseActivity() {
 #### 6. Select a particluar youtube video which you want to play. We will be using the ```VIDEO_ID_``` instead of a Youtube link.
 #### A ```VIDEO_ID```  is a part of a youtube link that comes after the equal sign(=). That is the part of the link that always comes after ```https://www.youtube.com/watch?v=```. We only need this ```VIDEO_ID``` fragment of the link and we will fetch the youtube video and play it on our emulator using our app.
 
-
+<div name = 'b'/>
 
 ## How do we play, pause and scroll view of this YouTube video?
 
